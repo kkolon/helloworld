@@ -1,4 +1,6 @@
-fruit_basket = ['grapefruit', 'raspberry', 'blackberry', 'pomelo', 'orange']
+#frut basket game
+
+fruit_basket = ['grapefruit', 'apple', 'tree sap', 'pear', 'dirt']
 
 def guess_fruit(basket):
     basket = fruit_basket
@@ -6,13 +8,13 @@ def guess_fruit(basket):
 def main():
     i= 0
     while i < 5:
-        guess = raw_input("Guess a fruit!")
+        guess = raw_input("Pick a fruit for my fruit basket . . .")
 
         if guess in fruit_basket:
-            print("You guessed correctly")
+            print("Yay! You are correct!")
             i = 5
         else:
-            print("The fruit is not in the fruit basket!")
+            print("Not my kind of fruit!")
             i += 1
 
 
